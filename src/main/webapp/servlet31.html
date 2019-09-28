@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Servlet 31 form</title>
+</head>
+<body>
+<form action="/servlet31" method="post">
+    <label>
+        Kwota: <input type="number" min="0.000" step="0.001" name="amount"/>
+    </label>
+    <fieldset>
+        <legend>Wybierz walutę</legend>
+        <label>EUR - USD:
+            <input type="radio" name="currency" value="eurToUsd"> </label><br>
+        <label>USD - EUR:
+            <input type="radio" name="currency" value="usdToEur"> </label><br>
+        <label>EUR - PLN:
+            <input type="radio" name="currency" value="eurToPln"> </label><br>
+        <label>PLN - EUR:
+            <input type="radio" name="currency" value="plnToEur"> </label><br>
+        <label>USD - PLN:
+            <input type="radio" name="currency" value="usdToPln"> </label><br>
+        <label>PLN - USD:
+            <input type="radio" name="currency" value="plnToUsd"> </label>
+    </fieldset>
+    <input type="submit" value="Przelicz">
+</form>
+</body>
+</html>
